@@ -1,11 +1,8 @@
 def add_one_and_multiply(a, x):
     """ Add 1 to a, and multiply by x"""
 
-    ### YOUR CODE GOES HERE
-    # Replace "None" with the correct expression
     r = (1 + a) * x
 
-    ### DO NOT MODIFY THE FOLLOWING LINE!
     return r
 
 
