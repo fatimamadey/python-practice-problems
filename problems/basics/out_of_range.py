@@ -2,9 +2,7 @@
 def out_of_range(x, lb, ub):
     """ Is x outside the range lb to ub (inclusive)?"""
 
-    r = (lb > x) or (x > ub)
-
-    return r
+    return (lb > x) or (x > ub)
 
 
 #############################################################

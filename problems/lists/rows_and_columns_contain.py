@@ -7,9 +7,23 @@ def rows_and_columns_contain(lst, target):
     Returns: True if every row and every column of lst contains
       target, False otherwise
     """
-
-    ### Replace pass with your code
-    pass
+    # checks if once in every row, count_row >= number of rows
+    count_row = 0
+    for row in lst:
+        for r in row:
+            if r == target:
+                count_row += 1
+                break #once one number in the row equal target moves to next row
+    #checks if occurs in every column, count_column >= number of columns
+    columns_list = list(zip(*lst))
+    count_column = 0
+    for column in columns_list:
+        for c in column:
+            if c == target:
+                count_column += 1
+                break
+    
+    return count_row >= len(lst) and count_column >= (len(lst[0]))
 
 
 #############################################################

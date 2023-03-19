@@ -2,12 +2,11 @@ def count_greater_than_val(lst, val):
     """
     Count the number of numbers in the list that are strictly greater than the value of val.
     """
-
-    ### EXERCISE 5 -- YOUR CODE GOES HERE
-    # Replace the following line with your code.
-    # After running your code, variable n should contain the value
-    # we ask you to compute in this exercise.
-    n = None
+    count = 0
+    for x in lst:
+        if x > val:
+            count = count + 1
+    n = count
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return n

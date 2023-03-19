@@ -1,3 +1,5 @@
+l = []
+
 def sublists(lst):
     """
     Computes all sublists of the input list.
@@ -6,8 +8,18 @@ def sublists(lst):
     
     Returns: (list of list of values) list of all sublists of lst.
     """
+    if lst == []:
+        return lst
+    else:
+        lst_without_first = sublists(lst[1:])
+        lst_with_first = [lst[0]] + lst_without_first
+        return lst_without_first + lst_with_first
+        
+        
+        
+    
 
-    pass
+        
 
 
 #############################################################

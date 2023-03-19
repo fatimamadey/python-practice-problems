@@ -1,9 +1,7 @@
 def add_one_and_multiply(a, x):
     """ Add 1 to a, and multiply by x"""
-
-    r = (1 + a) * x
-
-    return r
+    
+    return (1 + a) * x
 
 
 #############################################################

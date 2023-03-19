@@ -10,7 +10,6 @@ def number_string(x):
         s = "NEGATIVE"
     else:
         s = "POSITIVE"
-
     return s
 
 

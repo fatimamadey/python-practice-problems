@@ -6,9 +6,10 @@ def peep(p, e):
       e (int): second digit
     Returns: True if peep = pp^e, False otherwise
     """
-
-    ### Replace pass with your code
-    pass
+    str_peep = str(p) + str(e) + str(e) + str(p)
+    str_pp = str(p) + str(p)
+    return int(str_peep) == int(str_pp) ** e
+      
 
 
 #############################################################

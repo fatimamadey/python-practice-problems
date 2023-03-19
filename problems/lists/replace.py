@@ -8,8 +8,10 @@ def replace(lst, replacee, replacer):
     Returns: None, modifies lst in-place
     """
 
-    ### Replace pass with your code
-    pass
+    for i, num in enumerate(lst):
+        if num == replacee:
+            lst[i] = replacer
+    return None
 
 
 #############################################################

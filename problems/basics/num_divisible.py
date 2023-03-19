@@ -3,16 +3,7 @@ def num_divisible(lb, ub, p, q):
     How many numbers between lb and ub (inclusive) are divisible by p
     or divisible by q, but not divisible by both p and q.
     """
-
-    ### YOUR CODE GOES HERE
-    # Replace the following line with your code.
-    # After running your code, variable n should contain the value
-    # we ask you to compute in this exercise.
-    n = None
-
-    ### DO NOT MODIFY THE FOLLOWING LINE!
-    return 
-
+    return sum((n % p == 0) ^ (n % q == 0) for n in range(lb, ub + 1))
 
 #############################################################
 ###                                                       ###

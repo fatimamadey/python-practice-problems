@@ -14,7 +14,25 @@ def prune_tree(tree, keys_to_discard):
     Returns: (Tree) the pruned tree.
     '''
     
-    pass
+    children = tree.children
+    #tree.print()
+
+    if tree.key is None:
+        print("returns newtree bc children None")
+        new_tree.print()
+        return
+    new_tree = Tree(tree.key)
+    for st in children:
+        if st.key not in keys_to_discard:
+            print("adding", st.key)
+            new_tree.add_child(st)
+        else:
+            continue
+        print("checking", st.key)
+        prune_tree(st, keys_to_discard)
+    print("newtree")
+    new_tree.print()
+    return new_tree
 
 
 #############################################################
