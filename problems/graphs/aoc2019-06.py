@@ -20,7 +20,7 @@ def part1(orbits):
     Returns an integer
     """
     ### Replace with your code
-    return None
+    return 
 
 
 def part2(orbits):

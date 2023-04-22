@@ -2,10 +2,7 @@ def negate_list(lst):
     """
     Produce a *new* list with its values negated
     """
-    new_lst = []
-    for x in lst:
-        new_lst.append(-(x))
-
+    new_lst = [-x for x in lst]
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return new_lst
 

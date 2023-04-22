@@ -9,8 +9,6 @@ def peep(p, e):
     str_peep = str(p) + str(e) + str(e) + str(p)
     str_pp = str(p) + str(p)
     return int(str_peep) == int(str_pp) ** e
-      
-
 
 #############################################################
 ###                                                       ###
